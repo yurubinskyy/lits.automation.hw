@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.List;
 
+
 public class TestNbu {
     @Test
     public void testCheckUsdRate() throws IOException {

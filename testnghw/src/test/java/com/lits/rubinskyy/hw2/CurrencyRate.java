@@ -2,6 +2,7 @@ package com.lits.rubinskyy.hw2;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 import java.math.BigDecimal;
 
 public class CurrencyRate {
