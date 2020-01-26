@@ -59,12 +59,60 @@
     </build>
 
     <profiles>
+<!--        <profile>-->
+<!--            <id>testGroupId</id>-->
+<!--            <activation>-->
+<!--                <property>-->
+<!--                    <name>testGroup</name>-->
+<!--                    <value>smoke</value>-->
+<!--                </property>-->
+<!--            </activation>-->
+<!--            <build>-->
+<!--                <plugins>-->
+<!--                    <plugin>-->
+<!--                        <groupId>org.apache.maven.plugins</groupId>-->
+<!--                        <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                        <version>3.0.0-M4</version>-->
+<!--                        <configuration>-->
+<!--                            <suiteXmlFiles>-->
+<!--                                <suiteXmlFile>testng-smoke.xml</suiteXmlFile>-->
+<!--                            </suiteXmlFiles>-->
+<!--                        </configuration>-->
+<!--                    </plugin>-->
+<!--                </plugins>-->
+<!--            </build>-->
+<!--        </profile>-->
+
+<!--        <profile>-->
+<!--            <id>testGroup2Id</id>-->
+<!--            <activation>-->
+<!--                <property>-->
+<!--                    <name>testGroup</name>-->
+<!--                    <value>regression</value>-->
+<!--                </property>-->
+<!--            </activation>-->
+<!--            <build>-->
+<!--                <plugins>-->
+<!--                    <plugin>-->
+<!--                        <groupId>org.apache.maven.plugins</groupId>-->
+<!--                        <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                        <version>3.0.0-M4</version>-->
+<!--                        <configuration>-->
+<!--                            <suiteXmlFiles>-->
+<!--                                <suiteXmlFile>testng-regression.xml</suiteXmlFile>-->
+<!--                            </suiteXmlFiles>-->
+<!--                        </configuration>-->
+<!--                    </plugin>-->
+<!--                </plugins>-->
+<!--            </build>-->
+<!--        </profile>-->
+
         <profile>
-            <id>testGroupId</id>
+            <id>testGroup3Id</id>
             <activation>
                 <property>
-                    <name>testGroup</name>
-                    <value>smoke</value>
+                    <name>testGroup3</name>
+                    <value>bookTests</value>
                 </property>
             </activation>
             <build>
@@ -75,7 +123,7 @@
                         <version>3.0.0-M4</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>testng-smoke.xml</suiteXmlFile>
+                                <suiteXmlFile>testng-bookTests.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
@@ -84,11 +132,11 @@
         </profile>
 
         <profile>
-            <id>testGroup2Id</id>
+            <id>testGroup4Id</id>
             <activation>
                 <property>
-                    <name>testGroup</name>
-                    <value>regression</value>
+                    <name>testGroup4</name>
+                    <value>loginTests</value>
                 </property>
             </activation>
             <build>
@@ -99,7 +147,7 @@
                         <version>3.0.0-M4</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>testng-regression.xml</suiteXmlFile>
+                                <suiteXmlFile>testng-loginTests.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
