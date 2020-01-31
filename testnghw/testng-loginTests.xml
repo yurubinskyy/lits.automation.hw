@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="HomeWork4" verbose="1" parallel="false">
+    <test name="Login tests">
+        <groups>
+            <run>
+                <include name="loginTest"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.lits.rubinskyy.hw3"></package>
+        </packages>
+
+    </test>
+</suite>
